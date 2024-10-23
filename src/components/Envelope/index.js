@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import './index.css'; // Ensure to import your CSS file
 import stampImage from '../../assests/logo2.png'; // Import the stamp image
 import letterImage from '../../assests/i.png'; // Import the letter image
+import backgroundImage from '../../assests/image.png';
 
 const Envelope = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -42,7 +43,10 @@ const Envelope = () => {
 
     return (
         <div className="envelope-wrapper">
-            <div className="background-image"></div>
+            <div 
+                className="background-image" 
+                style={{ backgroundImage: `url(${backgroundImage})` }} 
+            />
             <div
                 id="envelope"
                 className={isOpen ? 'open' : 'close'}
