@@ -13,20 +13,14 @@ const FullscreenVideo = ({ video, onEnded }) => {
     videoRef.current.play(); // Play the video when button is clicked
   };
 
-
   return (
     <div className="fullscreen-video-container">
       {isPlaying && <FloatingSkipButton onSkip={onEnded} />}
       <video
         ref={videoRef}
         className="fullscreen-video"
-        // autoPlay
-        // loop
         muted={isMuted}
         onEnded={onEnded}
-        // onPlay={() => setTimeout(() => {
-        //   setIsMuted(false);
-        // }, 1000)}
         playsInline
       >
         <source src={video} type="video/mp4" />
@@ -35,7 +29,16 @@ const FullscreenVideo = ({ video, onEnded }) => {
 
       {!isPlaying && (
         <button onClick={handlePlay} className="play-button">
-          Play
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="50"  /* Icon size */
+            height="50" /* Icon size */
+            viewBox="0 0 24 24"
+            fill="white"
+            aria-hidden="true"
+          >
+            <path d="M8 5v14l11-7z" />
+          </svg>
         </button>
       )}
     </div>

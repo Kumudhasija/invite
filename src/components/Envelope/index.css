@@ -7,7 +7,7 @@
   margin-left: auto;
   margin-right: auto;
   top: 350px;
-  background-color: #bda895;
+  background-color: #c8a576;
   box-shadow: 0 4px 20px rgba(57, 56, 56, 0.186);
   animation: bounce 2s infinite; /* Bouncing effect when closed */
 }

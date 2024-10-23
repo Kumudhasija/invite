@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import './App.css';
-import video from './assests/main.mp4'
+import video from './assests/video.mp4'
 import FullscreenVideo from './components/FullscreenVideo';
 import Envelope from './components/Envelope';
 
@@ -10,9 +10,8 @@ function App() {
     <div className="App">
       {
         showVideo
-          ? <FullscreenVideo onEnded={() => setShowVideo(false)} video={video} />
-          : 
-        <Envelope />
+        ? <FullscreenVideo onEnded={() => setShowVideo(false)} video={video} />
+        : <Envelope />
       }
     </div>
   );
