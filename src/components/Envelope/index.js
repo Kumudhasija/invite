@@ -1,8 +1,11 @@
 import React, { useState } from 'react';
 import './index.css'; // Ensure to import your CSS file
 import stampImage from '../../assests/logo2.png'; // Import the stamp image
-import letterImage from '../../assests/i.png'; // Import the letter image
-import backgroundImage from '../../assests/image.png';
+import letterImage from '../../assests/invite.jpg'; // Import the letter image
+import backgroundImage from '../../assests/bg.jpg';
+import i1 from '../../assests/i1.png';
+import i2 from '../../assests/i2.png';
+import i3 from '../../assests/i3.png';
 
 const Envelope = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -86,9 +89,21 @@ const Envelope = () => {
                         className="letter-overlay-image"
                     />
                     <div className="clickable-divs">
-                        <div className="clickable-div div1" onClick={() => handleClick('Section 1')}></div>
-                        <div className="clickable-div div2" onClick={() => handleClick('Section 2')}></div>
-                        <div className="clickable-div div3" onClick={() => handleClick('Section 3')}></div>
+                        <div className="clickable-div div1" 
+                        style={{ backgroundImage: `url(${i1})` }}
+                        onClick={() => handleClick('Section 1')}>
+
+                        </div>
+                        <div className="clickable-div div2" 
+                        style={{ backgroundImage: `url(${i2})` }}
+                        onClick={() => handleClick('Section 2')}>
+
+                        </div>
+                        <div className="clickable-div div3" 
+                        style={{ backgroundImage: `url(${i3})` }}
+                        onClick={() => handleClick('Section 3')}>
+
+                        </div>
                     </div>
                 </div>
             )}

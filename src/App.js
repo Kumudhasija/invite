@@ -11,7 +11,8 @@ function App() {
       {
         showVideo
         ? <FullscreenVideo onEnded={() => setShowVideo(false)} video={video} />
-        : <Envelope />
+        : 
+        <Envelope />
       }
     </div>
   );
