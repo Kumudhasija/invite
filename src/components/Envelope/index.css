@@ -321,8 +321,8 @@ body {
   background-size: contain; /* Ensures the image scales properly */
   background-position: center;
   background-repeat: no-repeat; /* Prevents background repetition */
-  height: 35px;
-  width: 45px;
+  height: 40px;
+  width: 50px;
   margin: 10px 1px;
   animation: pop 1.5s ease-in-out infinite;
 }
@@ -339,16 +339,16 @@ body {
 /* Position each div at different locations */
 .div1 {
   top: 20px;
-  right: 6px;
+  right: 7px;
 }
 
 .div2 {
-  top: 80px;
-  right: 6px;
+  top: 90px;
+  right: 7px;
 }
 
 .div3 {
 
-  top: 140px;
-  right: 6px;
+  top: 150px;
+  right: 7px;
 }
